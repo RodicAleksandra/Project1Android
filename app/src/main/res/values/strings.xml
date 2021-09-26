@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GROCERY APP</string>
+    <string name="signIn">Sign In</string>
+    <string name="emailLogIn">Email</string>
+    <string name="etPasswordLogIn">Password</string>
+    <string name="checkBox">Remember me?=</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnAccount">Need an Account?</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="signUp">Sign Up</string>
+    <string name="etEmailSignUp">Email</string>
+    <string name="etNameSignUp">Name</string>
+    <string name="etLastNameSignUp">Last Name</string>
+    <string name="etAddSignUp">Address</string>
+    <string name="etMobileSignUp">Mobile</string>
+    <string name="etPasswordSignUp">Password</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="btnAlreadHave">Already have an account?</string>
+    <string name="tvMessage">By pressing Sign Up you agree with the Terms of Services and Privacy Policy</string>
+    <string name="btn_add_to_cart">Add to Cart</string>
+    <string name="btn_view_cart">View Cart</string>
+    <string name="btn_checkout">CHECK OUT</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_minus">-</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_orders">Orders</string>
+</resources>

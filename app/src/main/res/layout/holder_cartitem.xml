@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/padding_common"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivProductImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+    <TextView
+        android:id="@+id/tvProductName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Product Name"
+        app:layout_constraintTop_toTopOf="@id/ivProductImage"
+        app:layout_constraintStart_toEndOf="@id/ivProductImage"
+        app:layout_constraintEnd_toStartOf="@id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvPrice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="$999.99"
+        app:layout_constraintStart_toEndOf="@id/ivProductImage"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        app:layout_constraintEnd_toStartOf="@id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="@string/btn_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvQuantity"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="99"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/btnAdd"
+        app:layout_constraintStart_toStartOf="@id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnSubtract"
+        android:text="@string/btn_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

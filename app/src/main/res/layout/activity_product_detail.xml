@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProductDetailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="154dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="@dimen/margin_large"
+        app:layout_constraintBottom_toTopOf="@id/gdMiddle"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvProductName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        tools:text="Product Name"
+        app:layout_constraintTop_toTopOf="@id/ivProductImage"
+        app:layout_constraintStart_toEndOf="@id/ivProductImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvPrice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="$999.99"
+        app:layout_constraintStart_toEndOf="@id/ivProductImage"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvProductDesc"
+        tools:text="Category Description Here"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="300dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+        android:text="@string/btn_add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gdMiddle"
+        />
+
+    <Button
+        android:id="@+id/btnViewCart"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:text="@string/btn_view_cart"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
